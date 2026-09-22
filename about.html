@@ -10,7 +10,7 @@
     main { width:min(90vw,740px); padding:clamp(2.25rem,7vw,5rem); position:relative; border:1px solid rgba(255,255,255,.18); border-radius:28px; background:linear-gradient(135deg,rgba(255,255,255,.14),rgba(255,255,255,.04)); box-shadow:0 28px 90px rgba(0,0,0,.34),inset 0 1px rgba(255,255,255,.16); backdrop-filter:blur(20px); animation:enter .9s cubic-bezier(.2,.8,.2,1) both; }
     nav { display:flex; justify-content:flex-end; gap:1.25rem; margin-bottom:3.5rem; } nav a { color:#d8d8e8; font:.72rem/1 "DM Mono",monospace; letter-spacing:.09em; text-decoration:none; text-transform:uppercase; transition:color .2s; } nav a:hover,nav a[aria-current="page"] { color:#b9a4ff; }
     .eyebrow { display:flex; align-items:center; gap:.7rem; margin:0 0 2rem; color:#c8c6ff; font:.75rem/1 "DM Mono",monospace; letter-spacing:.14em; text-transform:uppercase; } .dot { width:.55rem; height:.55rem; border-radius:50%; background:#71f2b3; box-shadow:0 0 14px #71f2b3; }
-    h1 { max-width:8ch; margin:0; font:700 clamp(3.5rem,11vw,7.25rem)/.92 "Playfair Display",serif; letter-spacing:-.07em; } h1 em { color:#b9a4ff; font-weight:600; } p { max-width:43ch; margin:2rem 0 0; color:#d8d8e8; font-size:clamp(1rem,2vw,1.15rem); line-height:1.7; }
+    h1 { max-width:8ch; margin:0; font:700 clamp(3.5rem,11vw,7.25rem)/.92 "Playfair Display",serif; letter-spacing:-.07em; } h1 em { color:#b9a4ff; font-weight:600; } p { max-width:43ch; margin:2rem 0 0; color:#d8d8e8; font-size:clamp(1rem,2vw,1.15rem); line-height:1.7; } .resume-button { display:inline-flex; align-items:center; gap:.6rem; margin-top:2rem; padding:.85rem 1.15rem; border:1px solid rgba(255,255,255,.2); border-radius:999px; background:rgba(185,164,255,.16); color:#f8f7ff; font:700 .75rem/1 "DM Sans",sans-serif; letter-spacing:.08em; text-decoration:none; text-transform:uppercase; transition:transform .2s,background .2s; } .resume-button:hover { transform:translateY(-2px); background:rgba(185,164,255,.3); }
     .signature { display:flex; align-items:center; gap:1rem; margin-top:3.5rem; color:#a9a9c2; font:.72rem/1 "DM Mono",monospace; letter-spacing:.08em; text-transform:uppercase; } .line { height:1px; flex:1; background:linear-gradient(90deg,rgba(255,255,255,.28),transparent); } @keyframes enter { from { opacity:0; transform:translateY(24px) scale(.98); } to { opacity:1; transform:translateY(0) scale(1); } }
   </style>
 </head>
@@ -19,6 +19,7 @@
   <div class="eyebrow"><span class="dot"></span> The person behind the page</div>
   <h1>About <em>me.</em></h1>
   <p>Hi, I&rsquo;m S S Teja Sudarshan Kalluri. This is my corner of the internet&mdash;a space for curiosity, learning, and the ideas I&rsquo;m building next.</p>
+  <a class="resume-button" href="SS_Teja_Sudarshan_Resume_Updated.pdf" download>Download résumé <span aria-hidden="true">↓</span></a>
   <div class="signature"><span>Always learning</span><span class="line"></span><span>02 &mdash; 03</span></div>
 </main></body>
 </html>
