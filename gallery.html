@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101426" />
+    <title>Gallery | S S Teja Sudarshan Kalluri</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap");
+      :root { color-scheme: dark; } * { box-sizing: border-box; }
+      body { min-height: 100vh; margin: 0; display: grid; place-items: center; background: #101426; color: #f8f7ff; font-family: "DM Sans", sans-serif; }
+      .glow { position: fixed; width: 38rem; aspect-ratio: 1; border-radius: 50%; filter: blur(7rem); opacity: .45; pointer-events: none; }
+      .glow-one { background: #8b5cf6; top: -18rem; left: -11rem; } .glow-two { background: #0ea5e9; bottom: -21rem; right: -12rem; }
+      main { width: min(90vw, 760px); padding: clamp(2.25rem, 7vw, 5rem); position: relative; border: 1px solid rgba(255,255,255,.18); border-radius: 28px; background: linear-gradient(135deg, rgba(255,255,255,.14), rgba(255,255,255,.04)); box-shadow: 0 28px 90px rgba(0,0,0,.34), inset 0 1px rgba(255,255,255,.16); backdrop-filter: blur(20px); animation: enter .8s ease both; }
+      .eyebrow { display: flex; align-items: center; gap: .7rem; margin: 0 0 1.5rem; color: #c8c6ff; font: .75rem/1 "DM Mono", monospace; letter-spacing: .14em; text-transform: uppercase; }
+      .dot { width: .55rem; height: .55rem; border-radius: 50%; background: #71f2b3; box-shadow: 0 0 14px #71f2b3; }
+      h1 { margin: 0; font: 700 clamp(3.5rem, 10vw, 6rem)/.95 "Playfair Display", serif; letter-spacing: -.07em; } h1 em { color: #b9a4ff; font-weight: 600; }
+      p { margin: 1.5rem 0 2.25rem; color: #d8d8e8; line-height: 1.65; }
+      .menu { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+      .menu a { display: flex; align-items: center; justify-content: space-between; min-height: 88px; padding: 1.25rem; border: 1px solid rgba(255,255,255,.13); border-radius: 16px; background: rgba(255,255,255,.05); color: #f8f7ff; font-size: 1.1rem; font-weight: 700; text-decoration: none; transition: transform .2s, background .2s, border-color .2s; }
+      .menu a:hover { transform: translateY(-4px); background: rgba(185,164,255,.16); border-color: rgba(185,164,255,.6); } .arrow { color: #b9a4ff; font-size: 1.5rem; }
+      .footer { margin-top: 2.5rem; color: #a9a9c2; font: .72rem/1 "DM Mono", monospace; letter-spacing: .08em; text-transform: uppercase; }
+      @media (max-width: 520px) { .menu { grid-template-columns: 1fr; } }
+      @keyframes enter { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+  </head>
+  <body>
+    <div class="glow glow-one"></div><div class="glow glow-two"></div>
+    <main>
+      <div class="eyebrow"><span class="dot"></span> Site navigation</div>
+      <h1>Explore <em>here.</em></h1>
+      <p>Choose a page to discover more about me and my work.</p>
+      <nav class="menu" aria-label="Website pages">
+        <a href="index.html"><span>Home</span><span class="arrow" aria-hidden="true">→</span></a>
+        <a href="about.html"><span>About</span><span class="arrow" aria-hidden="true">→</span></a>
+        <a href="contact.html"><span>Contact</span><span class="arrow" aria-hidden="true">→</span></a>
+        <a href="SS_Teja_Sudarshan_Resume_Updated.pdf" download><span>Download résumé</span><span class="arrow" aria-hidden="true">↓</span></a>
+      </nav>
+      <div class="footer">S S Teja Sudarshan Kalluri &mdash; Gallery</div>
+    </main>
+  </body>
+</html>
